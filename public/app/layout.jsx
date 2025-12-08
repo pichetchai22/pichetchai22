@@ -1,9 +1,8 @@
 
-export default function Page() {
+export default function RootLayout({ children }) {
   return (
-    <main style={{ padding: 24 }}>
-      <h1>สวัสดีจาก Next.js + Firebase Hosting</h1>
-      <p>แอปนี้พร้อมสำหรับการ Deploy แล้ว</p>
-    </main>
+    <html lang="th">
+      <body style={{ margin: 0, fontFamily: 'system-ui' }}>{children}</body>
+    </html>
   );
 }
