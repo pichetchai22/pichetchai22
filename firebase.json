@@ -1,14 +1,13 @@
 {
   "hosting": {
-    "public": "out", 
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-
     "apphosting": {
-      "source": "."
+      "source": "." 
     }
   }
 }
