@@ -1,16 +1,14 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "out", // เปลี่ยน public เป็น 'out' หรือ '.next/static' ถ้าคุณใช้ export static
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
+    // ลบส่วน rewrites เก่าออก และเพิ่ม apphosting source
+    "apphosting": {
+      "source": "."
+    }
   }
 }
